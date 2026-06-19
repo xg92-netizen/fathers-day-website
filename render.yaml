@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: fathers-day-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --no-input && python manage.py migrate
+    startCommand: gunicorn config.wsgi:application
+    envVars:
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_ALLOWED_HOSTS
+        value: fathers-day-backend.onrender.com
+      - key: DJANGO_CSRF_TRUSTED_ORIGINS
+        value: https://fathers-day-backend.onrender.com
+      - key: FRONTEND_URL
+        value: https://fathers-day-frontend.onrender.com
+      - key: CORS_ALLOWED_ORIGIN
+        value: https://fathers-day-frontend.onrender.com
+      - key: DJANGO_SECURE_SSL_REDIRECT
+        value: "True"
+      - key: DJANGO_SECURE_HSTS_SECONDS
+        value: "31536000"
+
+  - type: static
+    name: fathers-day-frontend
+    env: static
+    buildCommand: cd frontend && npm ci && npm run build
+    staticPublishPath: frontend/dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://fathers-day-backend.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

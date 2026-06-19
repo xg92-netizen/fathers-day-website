@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="148" height="148" viewBox="0 0 148 148" role="img" aria-labelledby="title desc">
+  <title id="title">Father's Day mark</title>
+  <desc id="desc">A father and child embrace mark in charcoal and champagne gold.</desc>
+  <defs>
+    <linearGradient id="gold" x1="24" x2="128" y1="20" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f1d89b"/>
+      <stop offset=".47" stop-color="#c89a45"/>
+      <stop offset="1" stop-color="#8c6020"/>
+    </linearGradient>
+  </defs>
+  <path fill="#fbf8ef" d="M74 7c36.45 0 66 29.55 66 66s-29.55 66-66 66S8 109.45 8 73 37.55 7 74 7Z"/>
+  <path fill="none" stroke="url(#gold)" stroke-width="4" d="M74 9c35.35 0 64 28.65 64 64s-28.65 64-64 64-64-28.65-64-64S38.65 9 74 9Z"/>
+  <path fill="#102623" d="M79.64 40.1c9.56 0 17.1 7.53 17.1 16.96 0 7.44-4.75 13.78-11.37 16.04 15.13 4.9 25.98 18.83 25.98 35.21v2.69H82.71V95.26c0-12.65-10.34-22.92-23.08-22.92H50.2v-8.95c0-12.85 10.52-23.29 23.49-23.29h5.95Z"/>
+  <path fill="url(#gold)" d="M51.71 68.84c8.66 0 15.68 6.96 15.68 15.55 0 6.23-3.7 11.6-9.04 14.08 9.52 2.94 16.43 11.72 16.43 22.1v1.43H37.87v-1.43c0-10.38 6.9-19.16 16.43-22.1-5.35-2.48-9.04-7.85-9.04-14.08 0-8.59 7.02-15.55 15.68-15.55h.77Z"/>
+  <path fill="none" stroke="#c89a45" stroke-linecap="round" stroke-width="6" d="M45.2 105.4c-8.98-5.94-15.12-16.39-15.12-28.43 0-15.48 10.16-28.55 24.08-32.2"/>
+  <path fill="none" stroke="#102623" stroke-linecap="round" stroke-width="6" d="M91.13 91.25c7.06-5.48 11.59-14.02 11.59-23.61 0-10.74-5.68-20.16-14.23-25.45"/>
+</svg>
